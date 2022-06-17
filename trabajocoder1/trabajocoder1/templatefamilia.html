@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 calss="text-center"> Mi familia </h1>
+    <ul>
+        {%for c in Familia%}
+        <li><strong>nombre y apellido:</strong>{c.nombre}</li>
+        <li><strong>edad:</strong>{{c.edad}}</li>
+        <li><strong>fecha:</strong>{{c.fecha}}</li>
+        {% endfor %}
+    </ul>
+    <h3 class="blockquote-footer netx-center">Tp coder house    <cite title="source litle">imanol alvarez</cite>
+    </h3>
+</body>
+</html>
